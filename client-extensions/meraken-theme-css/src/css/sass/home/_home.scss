@@ -1,0 +1,148 @@
+.dwtcBudgetContent {
+	padding: var(--p48) var(--p0);
+	background-color: var(--coolTonedGray);
+
+	h6 {
+		font-family: var(--plusJakartaSans);
+		font-weight: var(--fw600);
+		font-size: var(--fs36);
+		line-height: var(--line-height-48);
+		text-align: center;
+		color: var(--darkGray);
+	}
+
+	h5 {
+		font-family: var(--plusJakartaSans);
+		font-weight: var(--fw800);
+		font-style: italic;
+		font-size: var(--fs48);
+		line-height: var(--line-height-64);
+		text-align: center;
+		color: var(--deepPurple);
+	}
+}
+
+.productSec {
+	background-color: var(--coolTonedGray);
+}
+
+.productSearch {
+	display: grid;
+	grid-template-columns: 1fr 495px;
+	align-items: center;
+	gap: 50px;
+	margin-bottom: var(--m30);
+
+	.productSearchHeading {
+		h5 {
+			font-family: var(--plusJakartaSans);
+			font-weight: var(--fw600);
+			font-size: var(--fs40);
+			line-height: var(--line-height-48);
+			margin-bottom: var(--m0);
+		}
+	}
+
+
+}
+
+.productCardGroup {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+}
+
+// responsive css
+
+@include for-max-1199 {
+	.productCardGroup {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+}
+
+@include for-max-991 {
+	.productCardGroup {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
+
+	 .productSearch {
+		grid-template-columns: 1fr 50%;
+		gap: 20px;
+	}
+
+	 .productSearch .productSearchHeading h5 {
+		font-size: var(--fs30);
+	}
+
+	.dwtcBudgetContent h5 {
+		font-size: var(--fs38);
+		line-height: var(--line-height-60);
+	}
+
+	.dwtcBudgetContent h6 {
+		font-size: var(--fs30);
+		line-height: var(--line-height-40);
+	}
+}
+
+@include for-max-767 {
+	.dwtcBudgetContent h6 {
+		font-family: var(--plusJakartaSans);
+		font-weight: var(--fw600);
+		font-size: var(--fs24);
+		line-height: var(--line-height-36);
+		text-align: center;
+		color: var(--darkGray);
+	}
+
+	.dwtcBudgetContent h5 {
+		font-weight: var(--fw800);
+		font-style: italic;
+		font-size: var(--fs24);
+		line-height: var(--line-height-36);
+	}
+
+	.productSearch .productSearchHeading h5 {
+		font-size: var(--fw26);
+		line-height: var(--line-height-32);
+	}
+
+	.dwtcBudgetContent h5 img {
+		width: 30px;
+	}
+}
+
+@include for-max-575 {
+	.productSearch {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.productCardGroup {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.dwtcBudgetContent h6 {
+		font-weight: var(--fw600);
+		font-size: var(--fs20);
+		line-height: var(--line-height-28);
+	}
+
+	.dwtcBudgetContent {
+		padding: var(--p28) var(--p0);
+	}
+
+	.topFilter .topFilterOuter .topFilterInner .topFilterRow .topFilterCol .formControl label {
+		display: none;
+	}
+
+	.productCardItem .productCardBtn .btn1 {
+		padding: var(--p8);
+	}
+}
+
+@include for-max-375 {}

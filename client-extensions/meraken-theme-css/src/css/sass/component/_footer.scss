@@ -1,0 +1,199 @@
+.footer {
+  background-color: #140526;
+
+  .footerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 30px 0 20px;
+
+    .footerHeading {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: var( --white);
+    }
+
+    .footerLeft {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+
+      .footerLogo {
+        width: 110px;
+      }
+
+      .footerContent {
+        .footerContactDetail {
+          display: flex;
+          align-items: center;
+          gap: 60px;
+
+          .footerContactDetailItem {
+            display: flex;
+            gap: 15px;
+            text-decoration: none;
+
+            .footerContactDetailIcon {
+              width: 22px;
+            }
+
+            .footerContactDetailTxt {
+              width: calc(100% - 22px);
+
+              h6 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: var( --white);
+                margin-bottom: 0;
+              }
+
+              span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: var( --white);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footerRight {
+      .footerMenu {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0 50px;
+          list-style: disc;
+          color: var( --white);
+          margin-left: 20px;
+
+          li {
+            a {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 37px;
+              color: var( --white);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerCopyright {
+    padding: 35px 0 24px;
+    border-top: 1px solid var( --white);
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: var( --white);
+    }
+  }
+}
+
+
+// responsive css start
+
+@include for-max-1399 {
+  .footer .footerInner .footerLeft {
+    gap: 50px;
+  }
+
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail,
+  .footer .footerInner .footerLeft {
+    gap: 40px;
+  }
+}
+
+@include for-max-1399 {
+  .footer .footerInner .footerLeft {
+    gap: 50px;
+  }
+
+  .footer .footerInner {
+    gap: 50px;
+  }
+
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail,
+  .footer .footerInner .footerLeft {
+    gap: 40px;
+  }
+}
+
+@include for-max-1399 {
+  .footer .footerInner {
+    gap: 40px;
+  }
+
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail,
+  .footer .footerInner .footerLeft {
+    gap: 20px;
+  }
+
+
+}
+
+@include for-max-1199 {
+  .footer .footerInner .footerRight .footerMenu ul {
+    gap: 0 30px;
+  }
+
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail .footerContactDetailItem {
+    gap: 8px;
+  }
+
+  .footer .footerInner .footerRight .footerMenu ul li a,
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail .footerContactDetailItem .footerContactDetailTxt span {
+    font-size: 14px;
+  }
+
+  .footer .footerInner .footerHeading {
+    font-size: 18px;
+  }
+
+  .footer .footerInner .footerLeft .footerLogo {
+    width: 90px;
+  }
+}
+
+@include for-max-991 {
+  .footer .footerInner {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .footer .footerInner .footerLeft {
+    gap: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerMenu {
+    text-align: center;
+  }
+
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail {
+    margin-top: 14px;
+    justify-content: center;
+  }
+
+  .footer .footerInner .footerRight .footerMenu ul {
+    justify-content: center;
+  }
+}
+
+@include for-max-575 {
+  .footer .footerInner .footerLeft .footerContent .footerContactDetail {
+    flex-wrap: wrap;
+  }
+}
+

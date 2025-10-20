@@ -1,0 +1,347 @@
+.nonCatalougeOrderDetailSec {
+    width: var(--width100);
+    height: 100%;
+    position: relative;
+    padding: 20px 0px 80px 0px;
+    background-color: var(--coolTonedGray);
+
+    .nonCatalougeOrderDetailWrapper {
+        width: var(--width100);
+        position: relative;
+
+        .myTitle {
+            width: var(--width100);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nonCatalougeOrderDetailMainBox {
+            width: var(--width100);
+            position: relative;
+            display: flex;
+            gap: 15px;
+
+            .order-left {
+                width: var(--width60);
+
+
+                .nonCatalougeOrderDetailInner {
+                    border: 1px solid #949494;
+                    background-color: var(--white);
+                    border-radius: var(--br10);
+                    padding: var(--p30);
+
+                    .orderHeader {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h5 {
+                            font-family: 'inter';
+                            font-weight: var(--fw500);
+                            font-size: var(--fs16);
+                            line-height: var(--line-height-24);
+                            color: var(--black2);
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            strong {
+                                font-family: 'inter';
+                                font-weight: var(--fw600);
+                                font-size: var(--fs24);
+                                line-height: var(--line-height-24);
+                                color: var(--black2);
+                            }
+                        }
+
+                        h6 {
+                            font-family: 'inter';
+                            font-weight: var(--fw500);
+                            font-size: var(--fs16);
+                            line-height: var(--line-height-24);
+                            color: var(--black2);
+                            display: flex;
+                            align-items: center;
+                            gap: 14px;
+
+
+                            .num {
+                                font-family: 'inter';
+                                font-weight: var(--fw600);
+                                font-size: var(--fs14);
+                                line-height: var(--line-height-24);
+                                color: var(--white);
+                                width: 41px;
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: var(--veryDarkBlueGray);
+                                border-radius: var(--br4);
+                            }
+
+                        }
+                    }
+
+                    .orderDetailInfo {
+                        position: relative;
+
+                        .details {
+                            margin-bottom: var(--m20);
+
+                            h4 {
+                                font-family: var(--inter);
+                                font-weight: var(--fw500);
+                                font-size: var(--fs16);
+                                line-height: var(--line-height-24);
+                                color: var(--black2);
+                            }
+
+                            ul {
+                                li {
+                                    font-family: var(--plusJakartaSan);
+                                    font-weight: var(--fw500);
+                                    font-size: var(--fs14);
+                                    line-height: var(--line-height-22);
+                                    margin-left: var(--m20);
+                                    color: var(--clr4);
+                                }
+                            }
+                        }
+
+                        .orderDetails {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            .itemBox {
+                                ul {
+                                    display: flex;
+                                    gap: 10px;
+
+                                    li {
+                                        list-style: none;
+                                        font-weight: var(--fw500);
+                                        font-size: var(--fs14);
+                                        line-height: var(--line-height-24);
+                                        color: var(--clr4);
+
+                                        span {
+                                            font-family: var(--inter);
+                                            font-weight: var(--fw400);
+                                            font-size: var(--fs14);
+                                            line-height: var(--line-height-16);
+                                            color: var(--black2);
+
+                                        }
+
+                                        a {
+                                            font-family: var(--inter);
+                                            font-weight: var(--fw500);
+                                            font-size: var(--fs14);
+                                            line-height: var(--line-height-20);
+                                            color: #0460D8;
+                                            display: inline-flex;
+                                            align-items: center;
+
+                                            &:hover {
+                                                text-decoration: none;
+                                            }
+                                        }
+                                    }
+
+                                    .darkText {
+                                        font-family: var(--inter);
+                                        font-weight: var(--fw600);
+                                        font-size: var(--fs16);
+                                        line-height: var(--line-height-28);
+                                        color: var(--black2);
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .addressBox {
+                        width: 100%;
+                        border: 1px solid var(--lightGrayishBlue);
+                        box-shadow: 0px 1px 2px 0px #1018280D;
+                        background-color: var(--white);
+                        padding: var(--p14) var(--p18);
+                        border-radius: var(--br8);
+                        margin-top: var(--m32);
+
+                        h6 {
+                            font-family: 'inter';
+                            font-weight: var(--fw600);
+                            font-size: var(--fs12);
+                            line-height: var(--line-height-22);
+                            text-transform: uppercase;
+                            color: var(--clr16);
+
+                            strong {
+                                font-family: 'inter';
+                                font-weight: var(--fw600);
+                                font-size: var(--fs16);
+                                line-height: var(--line-height-16);
+                                color: #2E2E2E;
+                            }
+                        }
+                    }
+
+                    .attachmentBox {
+                        width: var(--width100);
+                        margin-top: var(--m20);
+
+                        h5 {
+                            font-family: var(--inter);
+                            font-weight: var(--fw500);
+                            font-size: var(--fs16);
+                            line-height: var(--line-height-24);
+                            color: var(--black2);
+                            margin-bottom: var(--m10);
+                        }
+
+                        .pdfBox {
+                            width: var(--width100);
+                            max-width: 388px;
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                            box-shadow: 0px 2px 4px -2px #1018280F;
+                            box-shadow: 0px 4px 8px -2px #1018281A;
+                            border: 1px solid #EAECF0;
+                            background-color: var(--white);
+                            border-radius: var(--br10);
+                            padding: var(--p10);
+
+                            .textBox {
+                                h6 {
+                                    a {
+                                        font-family: var(--inter);
+                                        font-weight: var(--fw700);
+                                        font-size: var(--fs14);
+                                        line-height: var(--line-height-20);
+                                        color: var(--black2);
+                                        
+                                        &:hover{
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    display: flex;
+                                    gap: 10px;
+
+                                    li {
+                                        list-style: none;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        font-family: var(--inter);
+                                        font-weight: var(--fw500);
+                                        font-size: var(--fs12);
+                                        line-height: var(--line-height-16);
+                                        color: var(--slateGray);
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .order-right {
+                width: var(--width40);
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:767px) {
+    .nonCatalougeOrderDetailSec {
+        .nonCatalougeOrderDetailWrapper {
+            .nonCatalougeOrderDetailMainBox {
+                flex-wrap: wrap;
+
+                .order-left {
+                    width: var(--width100);
+                }
+
+                .order-right {
+                    width: var(--width100);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media(max-width:575px) {
+    .nonCatalougeOrderDetailSec {
+        .nonCatalougeOrderDetailWrapper {
+            .nonCatalougeOrderDetailMainBox {
+                .order-left {
+                    .nonCatalougeOrderDetailInner {
+                        padding: var(--p20);
+
+                        .orderHeader {
+                            flex-wrap: wrap;
+                        }
+
+                        .orderDetailInfo {
+                            .details {
+                                h4 {
+                                    font-size: var(--fs14);
+                                }
+
+                                ul {
+                                    li {
+                                        font-size: var(--fs12);
+                                    }
+                                }
+                            }
+
+                            .itemBox {
+                                ul {
+                                    li {
+                                        font-size: var(--fs12) !important;
+
+                                        a {
+                                            font-size: var(--fs12) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .addressBox {
+                            h6 {
+                                strong {
+                                    font-size: var(--fs14);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

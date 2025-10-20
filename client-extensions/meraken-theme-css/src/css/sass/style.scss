@@ -1,0 +1,90 @@
+// import fonts CSS 
+@import 'fonts/fonts';
+
+// import typography CSS 
+@import 'typography/typography';
+
+// import variables CSS 
+@import 'variables/variables';
+
+// import mixins CSS 
+@import 'mixins/mixins';
+
+// import common CSS 
+@import 'common/common';
+
+// import component
+@import 'component/button';
+
+// import header
+@import 'component/header';
+@import 'component/headerTwo';
+
+// import home
+@import 'home/home';
+
+// import model
+@import 'component/model';
+
+// import filter
+@import 'component/filter';
+
+// import search
+@import 'component/_search';
+
+// import top banner
+@import 'component/_top-banner';
+
+// import breadcrumb
+@import 'component/_breadcrumb';
+
+// import filter checkbox
+@import 'component/_filter-checkbox';
+
+// import product card 2
+@import 'component/_product-card-1';
+
+// import product card 2
+@import 'component/_product-card-2';
+
+// import product thumbnail slider and detail
+@import 'component/_product-thumbnail-slider-and-detail';
+
+// import pagination
+@import 'component/pagination';
+
+
+// import pages
+@import 'pages/pages';
+
+// import footer
+@import 'component/footer';
+
+
+//import cart
+@import 'component/cart';
+
+//import selectOrg
+@import 'component/selectOrg';
+
+//import myorder
+@import 'component/myorder';
+
+//import order-detail
+@import 'component/order-detail';
+
+//import after-product-purchase
+@import 'component/after-product-purchase';
+
+//import wishlist
+@import 'component/wishlist';
+
+//import category-page
+@import 'component/category-page';
+
+
+//import non-catalouge-home-page
+@import 'component/non-catalouge-home-page';
+
+//import non-catalouge-pr-order-detail
+@import 'component/non-catalouge-pr-order-detail';

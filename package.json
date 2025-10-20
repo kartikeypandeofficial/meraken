@@ -1,0 +1,9 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "client-extensions\\meraken-frontend-elements",
+            "client-extensions\\meraken-theme-css"
+        ]
+    }
+}

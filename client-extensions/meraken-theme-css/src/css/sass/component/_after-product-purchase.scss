@@ -1,0 +1,123 @@
+.orderPlacedSec {
+    width: var(--width100);
+    height: 100%;
+    position: relative;
+    background-color: var(--coolTonedGray);
+    padding: var(--p100) var(--p0);
+
+    .orderPlacedWrapper {
+        width: var(--width100);
+        max-width: 875px;
+        height: 100%;
+        position: relative;
+        background-color: var(--white);
+        border: 1px solid #2C2C2C33;
+        border-radius: var(--br10);
+        margin: 0 auto;
+
+        .orderPlacedInnerBox {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 97px 0px;
+
+            .imgBox {
+                width: var(--width100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .textBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-family: 'inter';
+                    font-weight: var(--fw700);
+                    font-size: var(--fs40);
+                    line-height: var(--line-height-64);
+                    color: var(--veryDarkBlueGray);
+                    margin-bottom: var(--m32);
+                    margin-top: var(--m8);
+                }
+
+                h4 {
+                    font-family: 'inter';
+                    font-weight: var(--fw400);
+                    font-size: var(--fs32);
+                    line-height: var(--line-height-48);
+                    color: var(--veryDarkBlueGray);
+                    margin-bottom: var(--m32);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:991px) {
+    .orderPlacedSec {
+        .orderPlacedWrapper {
+            .orderPlacedInnerBox {
+                .textBox {
+                    h2 {
+                        font-size: var(--fs40);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:767px) {
+    .myOderMainBox {
+        .orders-card {
+            .orders-table {
+                overflow-x: scroll;
+            }
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .orderPlacedSec {
+        .orderPlacedWrapper {
+            .orderPlacedInnerBox {
+                padding: 50px 50px;
+
+                .textBox {
+                    h2 {
+                        font-size: var(--fs24);
+                        line-height: var(--line-height-36);
+                        margin-bottom: var(--m24);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:450px) {
+    .orderPlacedSec {
+        .orderPlacedWrapper {
+            .orderPlacedInnerBox {
+                padding: 50px 20px;
+
+                .imgBox h2 {
+                    font-size: var(--fs30);
+                }
+            }
+        }
+    }
+}

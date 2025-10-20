@@ -1,0 +1,68 @@
+.productSearchBar {
+    .productSearchBarInputGroup {
+        box-shadow: 0px 1px 2px 0px #0000001A, 0px 4px 4px 0px #00000017, 0px 8px 5px 0px #0000000D, 0px 15px 6px 0px #00000003, 0px 23px 6px 0px #00000000;
+        background-color: var(--white);
+        border-radius: var(--br50);
+        display: flex;
+        align-items: center;
+        padding: var(--p10);
+        height: 54px;
+
+        .productSearchBarInput {
+            width: calc(100% - 40px);
+
+            input {
+                border: 0;
+                box-shadow: none;
+                font-family: var(--plusJakartaSans);
+                font-weight: var(--fw600);
+                font-size: var(--fs12);
+                line-height: var(--line-height-14);
+                text-transform: lowercase;
+                color: #717171;
+            }
+        }
+
+        .productSearchBarInputBtn {
+            button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--darkBlue);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                &:hover{
+                    background-color: var(--deepPurple);
+                    transition: var(--transition2);
+                }
+            }
+        }
+    }
+}
+
+@include for-max-575 {
+    .productSearchBar .productSearchBarInputGroup .productSearchBarInputBtn button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .productSearchBar .productSearchBarInputGroup .productSearchBarInput {
+        width: calc(100% - 30px);
+    }
+
+    .productSearchBar .productSearchBarInputGroup {
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1019607843), 0px 4px 4px 0px rgba(0, 0, 0, 0.0901960784), 0px 8px 5px 0px rgba(0, 0, 0, 0.0509803922), 0px 15px 6px 0px rgba(0, 0, 0, 0.0117647059), 0px 23px 6px 0px rgba(0, 0, 0, 0);
+        background-color: var(--white);
+        border-radius: var(--br50);
+        display: flex;
+        align-items: center;
+        padding: 8px 8px 8px 14px;
+        height: 40px;
+    }
+
+    .productSearchBar .productSearchBarInputGroup .productSearchBarInput input {
+        padding: var(--p0);
+    }
+}

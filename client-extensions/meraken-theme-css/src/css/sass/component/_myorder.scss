@@ -1,0 +1,236 @@
+.myOrderSec {
+    width: var(--width100);
+    height: 100%;
+    position: relative;
+    background-color: var(--coolTonedGray);
+    padding-bottom: var(--p100);
+
+    .myOrderWeapper {
+        width: var(--width100);
+        position: relative;
+    }
+}
+
+
+.myOderMainBox {
+    padding-top: var(--p26);
+
+    .orders-card {
+        width: var(--width100);
+        background-color: white;
+        border-radius: var(--br10);
+        box-shadow: 0px 2px 4px -2px #1018280F;
+        box-shadow: 0px 4px 8px -2px #1018281A;
+
+
+        .orders-header {
+            display: flex;
+            gap: 8px;
+            padding: var(--p20);
+            // align-items: center;
+
+            h5 {
+                font-family: 'inter';
+                font-weight: var(--fw600);
+                font-size: var(--fs18);
+                line-height: var(--line-height-28);
+                color: var(--veryDarkBlueGray);
+            }
+
+            .order-count {
+                width: 86px;
+                height: 22px;
+                font-family: 'inter';
+                font-weight: var(--fw500);
+                font-size: var(--fs12);
+                line-height: var(--line-height-18);
+                color: var(--darkblue);
+                background-color: var(--darkblue1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: var(--br16);
+            }
+        }
+
+        .orders-table {
+            width: 100%;
+            border-collapse: collapse;
+
+
+            thead {
+                background-color: var(--clr11);
+
+                th {
+                    text-align: left;
+                    padding: var(--p12) var(--p24);
+                    font-family: var(--inter);
+                    font-weight: var(--fw500);
+                    font-size: var(--fs12);
+                    line-height: var(--line-height-18);
+                    color: var(--slateGray);
+                    white-space: nowrap;
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid var(--clr24);
+
+                    td {
+                        font-family: var(--inter);
+                        font-weight: var(--fw400);
+                        font-size: var(--fs16);
+                        line-height: var(--line-height-20);
+                        color: var(--veryDarkBlueGray);
+                        white-space: nowrap;
+
+                        padding: var(--p12) var(--p24);
+
+                        .order-id-cell {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            img {
+                                width: 70px;
+                                height: 54px;
+                                object-fit: cover;
+                            }
+
+                            span {
+                                font-family: var(--inter);
+                                font-weight: var(--fw500);
+                                font-size: var(--fs16);
+                                line-height: var(--line-height-20);
+                                color: var(--veryDarkBlueGray);
+                                white-space: nowrap;
+
+                            }
+                        }
+
+                        .status {
+                            width: 92px;
+                            height: 18px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 999px;
+                            font-family: var(--inter);
+                            font-weight: var(--fw500);
+                            font-size: var(--fs14);
+                            line-height: var(--line-height-12);
+                            gap: 7px;
+
+                            &.delivered {
+                                background-color: #F6FDEC;
+                                color: var(--darkgren);
+                            }
+
+                            &.approved {
+                                background-color: #ECFDF3;
+                                color: var(--green);
+                            }
+                        }
+
+                        .view-link {
+                            font-family: var(--inter);
+                            font-weight: var(--fw500);
+                            font-size: var(--fs12);
+                            line-height: var(--line-height-22);
+                            color: var(--darkGray);
+                            text-decoration: none;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        .paginationWapper {
+            padding-bottom: var(--p0);
+        }
+
+    }
+}
+
+
+.myOrderPagination {
+    width: 100%;
+
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+
+        .countNumBox {
+            display: flex;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    .myOderMainBox .orders-card .orders-table tbody tr td {
+        padding: var(--p12) var(--p16);
+    }
+}
+
+
+@media(max-width:767px) {}
+
+// @media only screen and (max-width: 768px) {
+//     .myOrderTitle {
+//         flex-direction: column;
+//         align-items: flex-start;
+//         gap: 10px;
+//     }
+
+//     .orders-header {
+//         flex-direction: column;
+//         align-items: flex-start;
+//     }
+
+//     .orders-table thead {
+//         display: none;
+//     }
+
+//     .orders-table tbody tr {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 15px;
+//         background: white;
+//         margin-bottom: 15px;
+//         border-radius: 8px;
+//         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+//     }
+
+//     .orders-table tbody td {
+//         padding: 8px 0;
+//     }
+
+//     .orders-table tbody td::before {
+//         content: attr(data-label);
+//         font-weight: bold;
+//         display: block;
+//         margin-bottom: 5px;
+//         color: var(--slateGray);
+//     }
+
+//     .order-id-cell img {
+//         width: 50px;
+//         height: 40px;
+//     }
+
+//     .pagination {
+//         flex-wrap: wrap;
+//         gap: 8px;
+//     }
+// }

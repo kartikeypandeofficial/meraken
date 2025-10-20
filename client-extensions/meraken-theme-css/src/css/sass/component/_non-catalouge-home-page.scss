@@ -1,0 +1,347 @@
+.nonCatalogueFormSec {
+    width: var(--width100);
+    height: 100%;
+    position: relative;
+    background-color: var(--coolTonedGray);
+    padding: var(--p100) var((--p0));
+
+    .nonCatalogueFormWrapper {
+        width: var(--width100);
+        position: relative;
+        padding: 40px 50px;
+        background-color: var(--white);
+        border-radius: var(--br10);
+
+        .nonCatalogueFormheading {
+            width: var(--width100);
+            position: relative;
+
+            h2 {
+                font-family: var(--inter);
+                font-weight: var(--fw600);
+                font-size: var(--fs36);
+                line-height: var(--line-height-36);
+                color: var(--veryDarkBlueGray);
+
+            }
+
+            p {
+                font-family: var(--inter);
+                font-weight: var(--fw400);
+                font-size: var(--fs20);
+                line-height: var(--line-height-30);
+                color: var(--slateGray);
+            }
+        }
+
+        .nonCatalogueFormMainBox {
+            width: var(--width100);
+            display: flex;
+            gap: 57px;
+
+            .nonCatalogueInnerBoxOne {
+                width: var(--width60);
+
+                .modal-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .formFlexBox {
+                        display: flex;
+                        gap: 20px;
+                    }
+
+                    .formGroup {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+
+                        label {
+                            font-weight: var(--fw500);
+                            font-size: var(--fs14);
+                            line-height: var(--line-height-20);
+                            color: var(--blueGray);
+                        }
+
+                        .choices {
+                            box-shadow: 0px 4px 4px -2px rgba(66, 84, 99, 0.0705882353);
+                            position: relative;
+                            margin-bottom: var(--m0);
+
+                            .choices__inner {
+                                border: 1px solid var(--lightGrayishBlue);
+                                border-radius: var(--br8);
+
+                                .choices__input {
+                                    display: block;
+                                    width: 100%;
+                                    padding: 10px;
+                                    border-bottom: 1px solid #ddd;
+                                    background-color: #fff;
+                                    margin: 0;
+                                }
+
+                                .choices__list {
+                                    .choices__item {
+                                        font-weight: var(--fw400);
+                                        font-size: var(--fs16);
+                                        line-height: var(--line-height-24);
+                                        color: #667085;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        textarea {
+                            border: 1px solid var(--lightGrayishBlue);
+                            outline: none;
+                            font-weight: var(--fw400);
+                            font-size: var(--fs16);
+                            line-height: var(--line-height-24);
+                            border-radius: var(--br8);
+                            padding: var(--p14);
+                        }
+
+                        .largeBtn {
+                            width: 542px;
+                            height: 57PX;
+                        }
+
+                    }
+
+                    .formGroup1 {
+                        width: var(--width50);
+
+                        input {
+                            width: 100%;
+                            height: 48px;
+                            border-radius: var(--br4);
+                            background-color: var(--white);
+                            padding: var(--p14);
+                            border: 1px solid var(--bluishGray);
+                            display: flex;
+                            align-items: center;
+                            outline: none;
+                            font-weight: var(--fw400);
+                            font-size: var(--fs16);
+                            line-height: var(--line-height-24);
+                            color: #667085;
+                            border: 1px solid var(--lightGrayishBlue);
+                            border-radius: var(--br8);
+                        }
+                    }
+
+                    .formGroup1 {
+                        width: var(--width100);
+
+                        .date_input {
+                            position: relative;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            background-image: url(../images/datePickerImg.png);
+                            background-repeat: no-repeat;
+                            background-position: right 10px center;
+                            padding-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nonCatalogueInnerBoxTwo {
+            width: var(--width40);
+
+            .upload-wrapper {
+                width: var(--width100);
+                position: relative;
+
+                .upload-label {
+                    font-family: var(--inter);
+                    font-weight: var(--fw500);
+                    font-size: var(--fs14);
+                    line-height: var(--line-height-20);
+                    color: #414651;
+
+                    .required {
+                        color: var(--red);
+                    }
+                }
+
+                .dropzone {
+                    box-shadow: 0px 1px 2px 0px #0A0D120D;
+                    border: 1px solid #D5D7DA;
+                    border-radius: var(--br8);
+                    padding: var(--p32);
+                    text-align: center;
+                    cursor: pointer;
+                    background-color: var(--white);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h6 {
+                        font-family: var(--inter);
+                        font-weight: var(--fw600);
+                        font-size: var(--fs14);
+                        line-height: var(--line-height-20);
+                        color: #414651;
+                        margin-bottom: var(--m8);
+                        text-align: center;
+                    }
+
+                    p {
+                        font-family: var(--inter);
+                        font-weight: var(--fw600);
+                        font-size: var(--fs14);
+                        line-height: var(--line-height-20);
+                        color: #414651;
+                        margin-bottom: var(--m8);
+                        text-align: center;
+                    }
+
+                    .hint {
+                        font-family: var(--inter);
+                        font-weight: var(--fw400);
+                        font-size: var(--fs10);
+                        line-height: var(--line-height-20);
+                        color: #414651;
+                        display: inline-flex;
+                        margin-top: var(--m10);
+                    }
+
+                }
+
+                .preview-container {
+                    margin-top: 15px;
+                    position: relative;
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                    }
+
+                    .remove-btn {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        background: rgba(0, 0, 0, 0.6);
+                        color: white;
+                        border: none;
+                        border-radius: 50%;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+
+
+@media(max-width:1199px) {
+    .nonCatalogueFormSec {
+        .nonCatalogueFormWrapper {
+            padding: 30px 30px;
+
+            .nonCatalogueFormMainBox {
+                width: var(--width100);
+                display: flex;
+                gap: 30px;
+
+                .nonCatalogueInnerBoxOne {
+                    .modal-form {
+                        .formGroup {
+                            .largeBtn {
+                                width: 450px;
+                                height: 57PX;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:991px) {
+    .nonCatalogueFormSec {
+        .nonCatalogueFormWrapper {
+            .nonCatalogueFormMainBox {
+                flex-wrap: wrap;
+
+                .nonCatalogueInnerBoxOne {
+                    width: var(--width100);
+                }
+
+                .nonCatalogueInnerBoxTwo {
+                    width: var(--width100);
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:575px) {
+    .nonCatalogueFormSec {
+        .nonCatalogueFormWrapper {
+            .nonCatalogueFormheading {
+                h2 {
+                    font-size: var(--fs26);
+                }
+            }
+        }
+    }
+
+    .nonCatalogueFormSec {
+        .nonCatalogueFormWrapper {
+            .nonCatalogueFormMainBox {
+                .nonCatalogueInnerBoxOne {
+                    .modal-form {
+                        .formGroup {
+                            .largeBtn {
+                                width: 250px;
+                                height: 57PX;
+                            }
+                        }
+
+                        .formFlexBox {
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:400px) {
+    .nonCatalogueFormSec {
+        .nonCatalogueFormWrapper {
+            .nonCatalogueFormMainBox {
+                .nonCatalogueInnerBoxOne {
+                    .modal-form {
+                        .formGroup {
+                            .largeBtn {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

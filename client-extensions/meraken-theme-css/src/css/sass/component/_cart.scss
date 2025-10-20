@@ -1,0 +1,619 @@
+.myCartSec {
+  width: var(--width100);
+  height: 100%;
+  position: relative;
+  background-color: var(--coolTonedGray);
+  padding-bottom: var(--p50);
+
+  .myCartWrapper {
+    width: var(--width100);
+    position: relative;
+
+
+
+    .myCartMainBox {
+      width: var(--width100);
+      position: relative;
+      display: flex;
+      gap: 25px;
+
+      .MyCartInnerOne {
+        width: var(--width60);
+        position: relative;
+      }
+
+      .MyCartInnerTwo {
+        width: var(--width40);
+
+        .placeOrderSec {
+          width: var(--width100);
+        }
+      }
+    }
+  }
+}
+
+// textarea one css start 
+
+.notes-container {
+  width: var(--width100);
+
+  h5 {
+    font-family: var(--inter);
+    font-weight: var(--fw500);
+    font-size: var(--fs18);
+    line-height: var(--line-height-30);
+    color: var(--clr18);
+
+  }
+
+  .notes-body {
+    width: var(--width100);
+    background-color: var(--white);
+    border-radius: var(--br10);
+    padding: var(--p20);
+    border: 1px solid var(--clr21);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .notes-content {
+      width: var(--width100);
+
+      textarea {
+        width: var(--width100);
+        height: 95px;
+        border: none;
+        outline: none;
+        resize: none;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .edit1 {
+      right: 20px;
+    }
+
+    .notes-comment {
+      color: #6c757d;
+      font-size: 14px;
+    }
+  }
+}
+
+.notes-container2 {
+  padding: var(--p10) var(--p36) var(--p0) var(--p36);
+}
+
+.dropDwonBoxtwo {
+  padding: var(--p10) var(--p36) var(--p56) var(--p36);
+}
+
+.dropDwonBox {
+  margin-top: var(--m12);
+
+  .formControl {
+    label {
+      font-family: var(--inter);
+      font-weight: var(--fw500);
+      font-size: var(--fs16);
+      color: var(--black2);
+
+    }
+
+    .choices[data-type*=select-one] .choices__inner {
+      height: 65px;
+    }
+
+    .choices__list--single .choices__item {
+      color: #3C3C3C82;
+    }
+
+  }
+}
+
+// }
+
+
+//  component 
+.productDetailPage {
+  border: 1px solid var(--lightGrayishBlue);
+  border-radius: var(--br10);
+  background-color: var(--white);
+
+  .textBox {
+    padding: 22px 38px;
+    background-color: var(--white);
+    border-radius: var(--br10);
+
+    h4 {
+      font-family: "inter";
+      font-weight: var(--fw400);
+      font-size: var(--fs14);
+      line-height: var(--line-height-22);
+      color: var(--clr16);
+      margin: var(--m0);
+      text-transform: uppercase;
+    }
+  }
+
+  .productInfoMainBox {
+    background-color: var(--coolTonedGray);
+    margin: var(--m8) var(--m8) var(--m0) var(--m8);
+    border-radius: var(--br10);
+    // padding: var(--p20) var(--p30) var(--p44) var(--p30);
+    padding: 20px 30px 136px 30px;
+
+    .productDetailContentBox {
+      width: var(--width100);
+      display: flex;
+      gap: 20px;
+      // padding: var(--p20) var(--p36);
+
+      .productDetailInnerBoxOne {
+        width: var(--width50);
+
+        .productImgBox {
+          width: var(--width100);
+          border: 1px solid var(--clr17);
+          padding: var(--p70) var(--p36) var(--p36) var(--p36);
+          border-radius: var(--br10);
+          position: relative;
+          background-color: var(--white);
+
+          .likeTextBox {
+            width: var(--width100);
+            display: flex;
+            justify-content: space-between;
+
+            .tilte {
+              position: absolute;
+              top: 13px;
+              left: 10px;
+              padding: var(--p10) var(--p20);
+              background-color: var(--white);
+              border-radius: var(--br4);
+
+              h6 {
+                font-family: "inter";
+                font-weight: var(--fw600);
+                font-size: var(--fs10);
+                line-height: var(--line-height-10);
+                color: var(--black2);
+                margin: 0;
+              }
+            }
+
+            .likebtn {
+              position: absolute;
+              top: 13px;
+              right: -10px;
+
+              a {
+                width: 34px;
+                height: 34px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border: 1px solid #00000040;
+                border-radius: var(--br6);
+
+                &:hover {
+                  background-color: var();
+                }
+              }
+            }
+          }
+        }
+
+
+      }
+
+      .productDetailInnerBoxTwo {
+        width: var(--width50);
+
+        .productDetailText {
+
+          h5 {
+            font-family: "Plus Jakarta Sans";
+            font-weight: var(--fw600);
+            font-size: var(--fs24);
+            line-height: var(--line-height-36);
+            color: var(--darkGray);
+            border-bottom: 1px solid var(--clr17);
+            padding-bottom: 10px;
+            margin: var(--m0);
+          }
+
+
+          .paralist {
+            width: var(--width100);
+            // padding: var(--p16);
+
+            h4 {
+              margin-bottom: var(--m6);
+              font-family: var(--plusJakartaSans);
+              font-weight: var(--fw700);
+              font-size: var(--fs16);
+              line-height: var(--line-height-24);
+              margin-top: var(--m16);
+            }
+
+            ul {
+              padding: var(--p0) var(--p16) var(--p0) var(--p16);
+
+              li {
+                font-family: "Plus Jakarta Sans";
+                font-weight: var(--fw500);
+                font-size: var(--fs16);
+                line-height: var(--line-height-24);
+                color: var(--clr18);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .priceBox {
+      p {
+        font-family: var(--inter);
+        font-weight: var(--fw700);
+        font-size: var(--fs24);
+        line-height: var(--line-height-36);
+        color: var(--black2);
+
+
+        span {
+          font-family: var(--inter);
+          font-weight: var(--fw400);
+          font-size: var(--fs18);
+          line-height: var(--line-height-18);
+          color: var(--black2);
+
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--clr17);
+      padding-top: var(--p16);
+      margin-bottom: var(--m24);
+
+      .quantity-control {
+        background-color: var(--darkBlue);
+
+        button {
+          color: var(--white);
+        }
+
+        input {
+          background-color: transparent;
+          color: var(--white);
+        }
+      }
+    }
+
+    .catelougeAction {
+      margin-bottom: var(--m0);
+    }
+
+    .calculation {
+      margin: 0;
+    }
+  }
+
+  .productInfoMainBox2 {
+    margin: var(--m8) var(--m0) var(--m26) var(--m0);
+    padding: var(--p20) var(--p30) var(--p30) var(--p30);
+  }
+
+
+  .productInfoMainBox1 {
+    margin: 0;
+  }
+}
+
+
+.order-summary-card {
+  position: relative;
+
+  .store-info {
+    background-color: var(--white);
+    padding: var(--p20) var(--p14);
+    border: 1px solid var(--lightGrayishBlue);
+    border-radius: 8px;
+    margin-bottom: var(--m26);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      font-family: var(--inter);
+      font-weight: var(--fw400);
+      font-size: var(--fs14);
+      line-height: var(--line-height-22);
+      color: var(--clr16);
+      margin: 0;
+
+
+      strong {
+        font-family: var(--inter);
+        font-weight: var(--fw600);
+        font-size: var(--fs18);
+        line-height: var(--line-height-24);
+        color: var(--darkGray);
+
+      }
+    }
+  }
+
+  .billing-summary {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: var(--p20) var(--p20) var(--p26);
+    background-color: #fdfdfd;
+
+    h4 {
+      font-family: 'Plus Jakarta Sans';
+      font-weight: var(--fw600);
+      font-size: var(--fs16);
+      line-height: var(--line-height-32);
+      color: var(--clr22);
+      text-transform: uppercase;
+      margin-bottom: var(--m20);
+    }
+
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      p {
+        font-family: 'Plus Jakarta Sans';
+        font-weight: var(--fw500);
+        font-size: var(--fs14);
+        line-height: var(--line-height-20);
+        color: var(--black2);
+
+        strong {
+          font-family: 'Plus Jakarta Sans';
+          font-weight: var(--fw600);
+          font-size: var(--fs16);
+          line-height: var(--line-height-24);
+          color: var(--black2);
+        }
+      }
+    }
+
+    .item1 {
+      margin-bottom: var(--m70);
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--sky);
+      padding: var(--p20);
+      border-radius: var(--br10);
+
+
+      p {
+        font-family: 'Plus Jakarta Sans';
+        font-weight: var(--fw500);
+        font-size: var(--fs16);
+        line-height: var(--line-height-22);
+        color: var(--black2);
+        margin: 0;
+      }
+
+      strong {
+        font-family: 'Plus Jakarta Sans';
+        font-weight: var(--fw700);
+        font-size: var(--fs18);
+        line-height: var(--line-height-26);
+        color: var(--black2);
+      }
+    }
+  }
+
+  .orderBtn {
+    width: 100%;
+    padding: var(--p24) var(--p0);
+    margin-top: var(--m20);
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// responsive css start 
+
+@media(max-width:991px) {
+  .myCartSec .myCartWrapper .myCartMainBox {
+    flex-wrap: wrap;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne {
+    width: var(--width100);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo {
+    width: var(--width100);
+  }
+}
+
+@media(max-width:767px) {
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxOne {
+    width: var(--width100);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxTwo {
+    width: var(--width100);
+  }
+}
+
+@media(max-width:575px) {
+  .myCartSec .myCartWrapper .myCartTitle h3 {
+    font-size: var(--fs24) !important;
+    margin-bottom: var(--m12) !important;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .textBox {
+    display: none;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox {
+    margin: 0 !important;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox {
+    padding: 0 !important;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxOne p {
+    margin-top: var(--m10) !important;
+    margin-bottom: var(--m10) !important;
+    margin-left: var(--m4);
+    font-size: var(--fs20);
+    line-height: var(--line-height-38);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxTwo {
+    padding: var(--p6);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .actions {
+    padding: var(--p6);
+    margin-bottom: var(--m20);
+    padding-top: var(--p20);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage {
+    border: none;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxTwo .productDetailText h5 {
+    font-size: var(--fs14);
+    line-height: var(--line-height-22);
+  }
+
+  .edit-button {
+    right: 20px;
+  }
+
+  .editBtn1 {
+    right: 56px;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxTwo .productDetailText .paralist h4 {
+    font-size: var(--fs12);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .productDetailContentBox .productDetailInnerBoxTwo .productDetailText .paralist ul li {
+    font-size: var(--fs12);
+    line-height: var(--line-height-18);
+  }
+
+  .notes-container h5 {
+    font-size: var(--fs12);
+    line-height: var(--line-height-16);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .store-info p {
+    font-size: var(--fs12);
+    line-height: var(--line-height-16);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .store-info p strong {
+    font-size: var(--fs14);
+    line-height: var(--line-height-18);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary h4 {
+    font-size: var(--fs12);
+    line-height: var(--line-height-26);
+    margin-bottom: var(--m10);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary .item-row p {
+    font-size: var(--fs12);
+    line-height: var(--line-height-16);
+    margin: var(--m0);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary .item-row p strong {
+    font-size: var(--fs12);
+    line-height: var(--line-height-18);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary .item1 {
+    margin-bottom: var(--m0);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary .item-row {
+    margin-bottom: var(--m16);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary .total-row p {
+    font-size: var(--fs12);
+    line-height: var(--line-height-20);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerTwo .placeOrderSec .order-summary-card .billing-summary .total-row strong {
+    font-family: "Plus Jakarta Sans";
+    font-weight: var(--fw700);
+    font-size: var(--fs14);
+    line-height: var(--line-height-19);
+    color: var(--black2);
+  }
+
+  .notes-container2 {
+    padding: var(--p10) var(--p10) var(--p0) var(--p10);
+  }
+}
+
+@media(max-width:400px) {
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .actions {
+    flex-wrap: wrap;
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .actions .quantity-control {
+    width: var(--width100);
+  }
+
+  .myCartSec .myCartWrapper .myCartMainBox .MyCartInnerOne .productDetailPage .productInfoMainBox .actions .deleteBtn {
+    width: var(--width100);
+    margin-top: var(--m20);
+  }
+}
+
+
+
+
+[dir="rtl"] {
+  .edit-button {
+    right: inherit;
+    left: 60px;
+  }
+}

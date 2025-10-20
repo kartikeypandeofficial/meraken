@@ -1,0 +1,73 @@
+.topBanner {
+	.topBannerInner {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+		align-items: center;
+
+		.topBannerImg {
+			img {
+				width: 100%;
+			}
+		}
+
+		.topBannerContent {
+			h1 {
+				font-weight: var(--fw700);
+				font-size: var(--fs40);
+				line-height: var(--line-height-56);
+				text-align: center;
+			}
+
+			p {
+				font-weight: var(--fw500);
+				font-size: var(--fs20);
+				line-height: var(--line-height-30);
+				text-align: center;
+			}
+		}
+	}
+}
+
+@include for-max-1199 {
+	.topBanner .topBannerInner {
+		grid-template-columns: 24% 48% 24%;
+		justify-content: space-around;
+	}
+}
+
+@include for-max-991 {
+	.topBanner .topBannerInner .topBannerContent h1 {
+		font-size: var(--fs32);
+		line-height: var(--line-height-44);
+	}
+}
+
+@include for-max-767 {
+	.topBanner .topBannerInner .topBannerImg img {
+		height: 150px;
+		object-fit: cover;
+	}
+
+	.topBanner .topBannerInner .topBannerContent h1 {
+		font-size: var(--fs16);
+		line-height: var(--line-height-22);
+	}
+
+	.topBanner .topBannerInner .topBannerContent p {
+		font-size:  var(--fs8);
+		line-height: var(--line-height-12);
+	}
+
+	.topBanner .topBannerInner {
+		grid-template-columns: 24% 45% 24%;
+		justify-content: space-between;
+	}
+}
+
+@include for-max-575 {
+	.topBanner .topBannerInner {
+		grid-template-columns: 20% 48% 20%;
+		justify-content: space-between;
+	}
+}

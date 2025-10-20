@@ -1,0 +1,94 @@
+.categoryPageSec {
+    width: var(--width100);
+    height: 100%;
+    position: relative;
+    background-color: var(--coolTonedGray);
+    padding-bottom: var(--p30);
+
+    .categoryPageWrapper {
+        width: var(--width100);
+        height: 100%;
+        position: relative;
+
+        .myTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .categoryPageMainBox {
+            position: relative;
+
+            .categoryDetailInfo {
+                .categoryTitle {
+                    h5 {
+                        font-family: var(--plusJakartaSans);
+                        font-weight: var(--fw600);
+                        font-size: var(--fs16);
+                        line-height: var(--line-height-24);
+                        color: var(--darkGray);
+                        margin-bottom: var(--m10);
+                    }
+                }
+
+                .categoryList {
+                    width: 100%;
+                    overflow-x: scroll;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    ul {
+                        display: flex;
+                        gap: 10px;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                font-family: var(--plusJakartaSans);
+                                font-weight: var(--fw600);
+                                font-size: var(--fs12);
+                                line-height: var(--line-height-16);
+                                color: var(--darkGray);
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                background-color: var(--white);
+                                color: var(--black2);
+                                padding: var(--p18) var(--p50);
+                                border-radius: var(--br100);
+                                display: inline-flex;
+                                white-space: nowrap;
+                                transition: all 0.5s;
+
+                                &:hover{
+                                    background-color: var(--darkBlue);
+                                    color: var(--white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .productSec {
+            margin-top: var(--m20);
+
+            .productSecOuter {
+                h5 {
+                    font-family: var(--plusJakartaSans);
+                    font-weight: var(--fw600);
+                    font-size: var(--fs16);
+                    line-height: var(--line-height-24);
+                    color: var(--darkGray);
+                }
+            }
+        }
+    }
+
+
+}

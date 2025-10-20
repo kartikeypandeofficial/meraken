@@ -1,0 +1,13 @@
+assemble:
+  - from: build/buildTheme/fonts
+    into: static/fonts
+  - from: build/buildTheme/images
+    into: static/images
+meraken-theme-css:
+  clayRTLURL: css/clay_rtl.css
+  clayURL: css/clay.css
+  mainRTLURL: css/main_rtl.css
+  mainURL: css/main.css
+  name: Meraken Theme CSS
+  type: themeCSS
+  dxp.lxc.liferay.com.virtualInstanceId: "meraken.com"
