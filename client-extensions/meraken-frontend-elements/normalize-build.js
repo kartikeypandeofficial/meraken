@@ -37,4 +37,4 @@ const renameFiles = (dir, fileType) => {
 
 // Rename JS and CSS files
 renameFiles('js', 'js');
-//renameFiles('css', 'css');
+renameFiles('css', 'css');

@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import GenerativeAi from "./services/GenerativeAi";
 
 function Homepage() {
 
   return (
-    <div>
-        Homepage Content
-    </div>
+      <div>
+          <GenerativeAi></GenerativeAi>
+      </div>
   );
 }
 

@@ -1,6 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Homepage from "./pages/Homepage";
+import "./index.css";
+
 
 const MERAKEN_HOME_ELEMENT_ID = "meraken-frontend-element";
 

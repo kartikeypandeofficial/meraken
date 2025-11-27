@@ -10,5 +10,7 @@ meraken-frontend-element:
   type: customElement
   urls:
     - js/main.js
+  cssURLs:
+    - css/main.css
   useESM: true
-  dxp.lxc.liferay.com.virtualInstanceId: "meraken.com"
+  dxp.lxc.liferay.com.virtualInstanceId: "gmail.com"
